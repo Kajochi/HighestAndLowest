@@ -13,12 +13,14 @@ class MainTest {
     @CsvSource(
 
             value = {
-                    "4 5 7 1 3;7 1",
-                    "6 3 -2 7 9;9 -2",
-                    "3 7 4 8 -2 -5;8 -5"
+                    "4 5 7 1 3,7 1",
+                    "6 3 -2 7 9,9 -2",
+                    "3 7 4 8 -2 -5,8 -5",
 
-            },
-            delimiter = ";"
+
+            }
+
+
     )
     void isStringFiltertHighestAndLowest(String input, String expected){
         //GIVEN
